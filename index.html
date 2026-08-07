@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Amtihan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16233a;
+    --muted: #5b6b85;
+    --line: #e2e7f0;
+    --paper: #fbfbfd;
+    --card: #ffffff;
+    --brand: #2f5dff;
+    --brand-soft: #eef2ff;
+    --accent: #1fae70;
+    --warn-bg: #fff7ec;
+    --warn-border: #f0c98a;
+    --warn-text: #7a5310;
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    background: linear-gradient(180deg, #16233a 0%, #1c2c47 100%);
+    color: #eef2ff;
+    padding: 56px 24px 64px;
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #9fb2ff;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6c8cff;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(32px, 5vw, 44px);
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .updated {
+    color: #b7c4e6;
+    font-size: 14.5px;
+    margin: 0;
+  }
+
+  main {
+    max-width: 760px;
+    margin: -34px auto 80px;
+    padding: 0 24px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 40px 40px 8px;
+    box-shadow: 0 1px 2px rgba(22,35,58,0.04), 0 12px 32px rgba(22,35,58,0.06);
+  }
+
+  .notice {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    color: var(--warn-text);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 14.5px;
+    margin: 0 0 32px;
+  }
+
+  .notice strong { color: #5c3d0a; }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 40px 0 12px;
+    color: var(--ink);
+    scroll-margin-top: 20px;
+  }
+
+  section:first-of-type h2 { margin-top: 0; }
+
+  p { color: #2b3a55; margin: 0 0 14px; }
+
+  ul { margin: 0 0 14px; padding-left: 22px; color: #2b3a55; }
+  li { margin-bottom: 6px; }
+
+  .fill {
+    background: var(--brand-soft);
+    color: var(--brand);
+    padding: 1px 7px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95em;
+    white-space: nowrap;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 20px;
+    font-size: 14.5px;
+  }
+
+  th {
+    text-align: left;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    padding: 10px 12px;
+    border-bottom: 2px solid var(--line);
+  }
+
+  td {
+    padding: 12px 12px;
+    border-bottom: 1px solid var(--line);
+    color: #2b3a55;
+    vertical-align: top;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin: 0 0 8px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .toc li a {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--brand);
+    text-decoration: none;
+    background: var(--brand-soft);
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+
+  .toc li a:hover { border-color: var(--brand); }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    padding: 0 24px;
+    color: var(--muted);
+    font-size: 13.5px;
+    text-align: center;
+  }
+
+  .contact-box {
+    background: var(--brand-soft);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 8px 0 28px;
+  }
+
+  .contact-box p { margin: 0; color: var(--ink); }
+
+  @media (max-width: 600px) {
+    .card { padding: 28px 20px 4px; }
+    header { padding: 44px 18px 56px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Amtihan</div>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : <span class="fill" style="background:rgba(255,255,255,0.12); color:#dfe6ff;">DATE À COMPLÉTER</span></p>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+
+    <div class="notice">
+      <strong>À lire avant de publier :</strong> ce document a été rédigé à partir des fonctionnalités réelles de l'application. Il couvre les points attendus par Google Play, mais ne constitue pas un avis juridique. Une relecture par un professionnel est recommandée avant publication, notamment sur les obligations liées aux utilisateurs mineurs et au RGPD.
+    </div>
+
+    <ul class="toc">
+      <li><a href="#qui">1. Qui sommes-nous</a></li>
+      <li><a href="#donnees">2. Données collectées</a></li>
+      <li><a href="#usage">3. Utilisation</a></li>
+      <li><a href="#partage">4. Partage</a></li>
+      <li><a href="#conservation">5. Conservation</a></li>
+      <li><a href="#droits">6. Vos droits</a></li>
+      <li><a href="#mineurs">7. Mineurs</a></li>
+      <li><a href="#securite">8. Sécurité</a></li>
+      <li><a href="#modifs">9. Modifications</a></li>
+      <li><a href="#contact">10. Contact</a></li>
+    </ul>
+
+    <section id="qui">
+      <h2>1. Qui sommes-nous</h2>
+      <p>Amtihan est développée par <span class="fill">KAMAL ZAHRANI </span>, basé(e) à <span class="fill">MARRAKECH, MAROC</span>.</p>
+      <p>Pour toute question concernant cette politique ou vos données personnelles, contactez-nous à <span class="fill">aboujihad.kamal@gmail.com</span>.</p>
+    </section>
+
+    <section id="donnees">
+      <h2>2. Données que nous collectons</h2>
+
+      <p><strong>Données de compte</strong></p>
+      <ul>
+        <li>Nom complet et adresse email</li>
+        <li>Mot de passe (stocké de façon chiffrée)</li>
+        <li>Si connexion Google : informations de base de votre compte Google partagées avec votre accord</li>
+      </ul>
+
+      <p><strong>Contenu que vous créez</strong></p>
+      <ul>
+        <li>Examens, questions et réponses</li>
+        <li>Résultats et scores de vos tests</li>
+        <li>Groupes créés ou rejoints, demandes associées</li>
+        <li>Documents téléversés pour la génération de questions par IA</li>
+      </ul>
+
+      <p><strong>Données d'utilisation</strong></p>
+      <ul>
+        <li>Quotas (générations IA, groupes créés)</li>
+        <li>Historique des tentatives de test</li>
+      </ul>
+
+      <p><strong>Données de paiement</strong></p>
+      <ul>
+        <li>Aucune coordonnée bancaire ou numéro de carte n'est jamais stocké par nos soins — les paiements par carte passent directement par Google Play Billing</li>
+        <li>Pour le virement manuel : uniquement la référence de paiement que vous saisissez volontairement</li>
+      </ul>
+
+      <p><strong>Données techniques</strong></p>
+      <ul>
+        <li>Adresse IP et journaux de connexion</li>
+        <li>Modèle d'appareil et version d'Android</li>
+      </ul>
+    </section>
+
+    <section id="usage">
+      <h2>3. Comment nous utilisons ces données</h2>
+      <ul>
+        <li>Créer et gérer votre compte</li>
+        <li>Vous permettre de créer, partager et passer des examens</li>
+        <li>Calculer vos résultats et statistiques</li>
+        <li>Faire fonctionner les groupes (partage, demandes d'adhésion)</li>
+        <li>Appliquer les limites du palier gratuit et gérer l'abonnement premium</li>
+        <li>Assurer la sécurité de l'application et prévenir les fraudes</li>
+        <li>Vous contacter en cas de besoin (support, notifications importantes)</li>
+      </ul>
+      <p>Nous ne vendons jamais vos données à des tiers.</p>
+    </section>
+
+    <section id="partage">
+      <h2>4. Partage avec des tiers</h2>
+      <table>
+        <tr><th>Prestataire</th><th>Ce qui est partagé</th><th>Pourquoi</th></tr>
+        <tr><td>Google (Sign-In, Play Billing)</td><td>Email, nom, statut d'achat</td><td>Connexion et paiements</td></tr>
+        <tr><td>DeepSeek (IA)</td><td>Sujet, niveau, contenu des documents fournis</td><td>Génération de questions</td></tr>
+        <tr><td>Render</td><td>Ensemble des données de l'application</td><td>Hébergement du serveur</td></tr>
+        <tr><td>Aiven</td><td>Ensemble des données de l'application</td><td>Base de données</td></tr>
+      </table>
+      <p>Ces prestataires n'utilisent vos données que pour nous fournir leur service, selon leurs propres conditions de confidentialité.</p>
+      <p><strong>Visibilité entre utilisateurs</strong> : le contenu d'un examen n'est visible par un autre utilisateur qu'au moment où il passe le test (bonnes réponses masquées pendant l'épreuve) ou si vous le rendez public. Les résultats détaillés ne sont visibles que par vous-même et le créateur de l'examen.</p>
+    </section>
+
+    <section id="conservation">
+      <h2>5. Conservation des données</h2>
+      <p>Vos données sont conservées tant que votre compte est actif. Vous pouvez demander leur suppression à tout moment en nous contactant.</p>
+    </section>
+
+    <section id="droits">
+      <h2>6. Vos droits</h2>
+      <p>Selon votre pays de résidence, vous pouvez :</p>
+      <ul>
+        <li>Accéder aux données que nous détenons sur vous</li>
+        <li>Demander leur correction si elles sont inexactes</li>
+        <li>Demander leur suppression</li>
+        <li>Vous opposer à certains traitements</li>
+      </ul>
+    </section>
+
+    <section id="mineurs">
+      <h2>7. Utilisateurs mineurs</h2>
+      <p>Amtihan est une plateforme éducative susceptible d'être utilisée par des élèves mineurs, généralement dans un cadre scolaire ou sous supervision d'un enseignant ou d'un parent. Nous ne collectons pas sciemment plus de données que nécessaire au fonctionnement de l'application. Si vous êtes parent ou tuteur et pensez que votre enfant nous a fourni des données sans votre consentement, contactez-nous pour leur suppression.</p>
+    </section>
+
+    <section id="securite">
+      <h2>8. Sécurité</h2>
+      <p>Nous mettons en œuvre des mesures techniques raisonnables pour protéger vos données (mots de passe chiffrés, connexions HTTPS, authentification par jeton). Aucun système n'étant infaillible, nous ne pouvons garantir une sécurité absolue.</p>
+    </section>
+
+    <section id="modifs">
+      <h2>9. Modifications de cette politique</h2>
+      <p>Nous pouvons mettre à jour cette politique. Toute modification importante vous sera communiquée via l'application.</p>
+    </section>
+
+    <section id="contact">
+      <h2>10. Contact</h2>
+      <div class="contact-box">
+        <p>Pour toute question : <strong><span class="fill" style="background:#dfe6ff;">aboujihad.kamal@gmail.com</span></strong></p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Amtihan — Application éducative
+</footer>
+
+</body>
+</html>
