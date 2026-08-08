@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suppression de compte — Amtihan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16233a;
+    --muted: #5b6b85;
+    --line: #e2e7f0;
+    --paper: #fbfbfd;
+    --card: #ffffff;
+    --brand: #2f5dff;
+    --brand-soft: #eef2ff;
+    --danger: #c0392b;
+    --danger-soft: #fdecea;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: linear-gradient(180deg, #16233a 0%, #1c2c47 100%);
+    color: #eef2ff;
+    padding: 56px 24px 64px;
+  }
+  .header-inner { max-width: 720px; margin: 0 auto; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; color: #9fb2ff; margin-bottom: 18px;
+  }
+  .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #6c8cff; }
+  h1 {
+    font-family: 'Fraunces', serif; font-weight: 700;
+    font-size: clamp(30px, 5vw, 40px); margin: 0 0 12px; letter-spacing: -0.01em;
+  }
+  .subtitle { color: #b7c4e6; font-size: 15px; margin: 0; max-width: 55ch; }
+  main { max-width: 720px; margin: -34px auto 80px; padding: 0 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 40px 40px 8px;
+    box-shadow: 0 1px 2px rgba(22,35,58,0.04), 0 12px 32px rgba(22,35,58,0.06);
+  }
+  h2 { font-family: 'Fraunces', serif; font-weight: 600; font-size: 20px; margin: 36px 0 12px; }
+  section:first-of-type h2 { margin-top: 0; }
+  p { color: #2b3a55; margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; color: #2b3a55; }
+  li { margin-bottom: 6px; }
+  .fill {
+    background: var(--brand-soft); color: var(--brand); padding: 1px 7px;
+    border-radius: 6px; font-weight: 600; font-size: 0.95em; white-space: nowrap;
+  }
+  .steps { list-style: none; margin: 0 0 14px; padding: 0; counter-reset: step; }
+  .steps li {
+    counter-increment: step; position: relative; padding-left: 40px;
+    margin-bottom: 16px; color: #2b3a55;
+  }
+  .steps li::before {
+    content: counter(step); position: absolute; left: 0; top: -1px;
+    width: 26px; height: 26px; border-radius: 50%; background: var(--brand-soft);
+    color: var(--brand); font-weight: 700; font-size: 13px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .contact-box {
+    background: var(--brand-soft); border-radius: 10px; padding: 22px 24px; margin: 8px 0 28px;
+  }
+  .contact-box p { margin: 0; color: var(--ink); }
+  .retention-box {
+    background: var(--danger-soft); border: 1px solid #f0c6c0; color: #7a2b20;
+    border-radius: 10px; padding: 16px 18px; font-size: 14.5px; margin: 0 0 20px;
+  }
+  .retention-box strong { color: var(--danger); }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 14.5px; }
+  th {
+    text-align: left; font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; padding: 10px 12px; border-bottom: 2px solid var(--line);
+  }
+  td { padding: 12px 12px; border-bottom: 1px solid var(--line); color: #2b3a55; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  footer {
+    max-width: 720px; margin: 0 auto 60px; padding: 0 24px;
+    color: var(--muted); font-size: 13.5px; text-align: center;
+  }
+  footer a { color: var(--brand); text-decoration: none; }
+  @media (max-width: 600px) {
+    .card { padding: 28px 20px 4px; }
+    header { padding: 44px 18px 56px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Amtihan</div>
+    <h1>Suppression de compte et de données</h1>
+    <p class="subtitle">Comment demander la suppression définitive de votre compte Amtihan et des données associées.</p>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+
+    <section>
+      <h2>Comment demander la suppression</h2>
+      <ol class="steps">
+        <li>Envoyez un email à <span class="fill">aboujihad.kamal@gmail.com</span> depuis l'adresse email associée à votre compte Amtihan, avec pour objet « Suppression de compte ».</li>
+        <li>Précisez le nom ou l'email utilisé pour votre inscription, afin que nous puissions identifier votre compte.</li>
+        <li>Nous traitons votre demande sous <span class="fill">7 jours ouvrés</span> et vous confirmons par email une fois la suppression effectuée.</li>
+      </ol>
+      <div class="contact-box">
+        <p>Contact pour toute demande de suppression : <strong><span class="fill" style="background:#dfe6ff;">aboujihad.kamal@gmail.com</span></strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ce qui est supprimé</h2>
+      <table>
+        <tr><th>Donnée</th><th>Suppression</th></tr>
+        <tr><td>Nom, email, mot de passe</td><td>Supprimés définitivement</td></tr>
+        <tr><td>Examens, questions et réponses que vous avez créés</td><td>Supprimés définitivement</td></tr>
+        <tr><td>Historique de vos tests et résultats</td><td>Supprimés définitivement</td></tr>
+        <tr><td>Appartenance à des groupes</td><td>Supprimée définitivement</td></tr>
+        <tr><td>Pièces jointes téléversées (images, documents)</td><td>Supprimées définitivement</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Ce qui peut être conservé temporairement</h2>
+      <div class="retention-box">
+        <strong>Exception légale :</strong> certaines données liées aux transactions financières (historique d'abonnement, référence de paiement) peuvent être conservées pendant une durée limitée après la suppression du compte, si la loi applicable (comptabilité, fiscalité) nous y oblige. Ces données ne sont jamais utilisées à d'autres fins après la suppression du compte.
+      </div>
+      <p>Les examens que vous avez partagés publiquement ou dans un groupe, et qui ont été copiés par d'autres utilisateurs avant la suppression de votre compte, ne sont pas rétroactivement supprimés de leurs propres comptes.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Amtihan — Application éducative · <a href="./index.html">Politique de confidentialité</a>
+</footer>
+
+</body>
+</html>
